@@ -1,5 +1,6 @@
 package com.exemplo.lanchonete.provider;
 
+import au.com.dius.pact.core.model.annotations.PactDirectory;
 import au.com.dius.pact.provider.junit5.HttpTestTarget;
 import au.com.dius.pact.provider.junit5.PactVerificationInvocationContextProvider;
 import au.com.dius.pact.provider.junitsupport.Provider;
@@ -12,8 +13,7 @@ import org.junit.jupiter.api.TestTemplate;
 import org.junit.jupiter.api.extension.ExtendWith;
 
 @Provider("NomeDoProvedor")
-@PactUrl(urls = { "C:\\Users\\herbe\\eclipse-workspace\\pedido-lanche-service\\target\\pacts\\ClientePedido-default.json" })
-//@PactFolder("target/pacts")
+@PactFolder(value = "C:\\Users\\herbe\\eclipse-workspace\\pedido-lanche-service\\target\\pacts")
 public class CozinhaProviderTest {
 
 	@BeforeEach
