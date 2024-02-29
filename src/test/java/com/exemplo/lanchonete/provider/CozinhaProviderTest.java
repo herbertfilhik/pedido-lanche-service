@@ -13,7 +13,7 @@ import org.junit.jupiter.api.TestTemplate;
 import org.junit.jupiter.api.extension.ExtendWith;
 
 @Provider("NomeDoProvedor")
-@PactFolder(value = "C:\\Users\\herbe\\eclipse-workspace\\pedido-lanche-service\\target\\pacts")
+@PactFolder("pacts")
 public class CozinhaProviderTest {
 
 	@BeforeEach
