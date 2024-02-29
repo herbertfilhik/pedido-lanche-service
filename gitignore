@@ -1,0 +1,53 @@
+
+# Arquivos compilados
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Diretórios de compilação
+target/
+out/
+build/
+
+# Dependências
+!**/lib/
+/lib/
+*.dependency
+*.classpth
+*.iml
+*.ipr
+*.iws
+*.idea/
+
+# Arquivos de sistema operacional
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Pasta de configurações do VSCode
+.vscode/
+
+# Arquivos de log
+*.log
+
+# Outros arquivos e diretórios ignorados
+pacts/ # Ignora os pactos gerados nos testes
+*.swp
+*~
