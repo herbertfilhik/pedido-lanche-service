@@ -1,0 +1,44 @@
+{
+  "consumer": {
+    "name": "ClientePedido"
+  },
+  "interactions": [
+    {
+      "description": "An order for a hamburger with cheese and without onion x",
+      "providerStates": [
+        {
+          "name": "Default order"
+        }
+      ],
+      "request": {
+        "body": {
+          "extras": "queijo",
+          "item": "hamburguer",
+          "semCebola": true
+        },
+        "headers": {
+          "Content-Type": "application/json; charset=UTF-8"
+        },
+        "method": "POST",
+        "path": "/pedido"
+      },
+      "response": {
+        "body": {
+          "status": "Pedido aceito"
+        },
+        "status": 200
+      }
+    }
+  ],
+  "metadata": {
+    "pact-jvm": {
+      "version": "4.2.14"
+    },
+    "pactSpecification": {
+      "version": "3.0.0"
+    }
+  },
+  "provider": {
+    "name": "default"
+  }
+}

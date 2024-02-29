@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.exemplo.lanchonete.provider.CozinhaProviderTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.034 s <<< FAILURE! - in com.exemplo.lanchonete.provider.CozinhaProviderTest
+testTemplate{PactVerificationContext}  Time elapsed: 0.034 s  <<< ERROR!
+au.com.dius.pact.provider.junitsupport.loader.NoPactsFoundException: 
+No Pact files were found to verify
+Provider: CozinhaService
+Source: Directory(\pedido-lanche-service\pacts)
+
