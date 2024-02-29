@@ -5,13 +5,15 @@ import au.com.dius.pact.provider.junit5.PactVerificationInvocationContextProvide
 import au.com.dius.pact.provider.junitsupport.Provider;
 import au.com.dius.pact.provider.junitsupport.State;
 import au.com.dius.pact.provider.junitsupport.loader.PactFolder;
+import au.com.dius.pact.provider.junitsupport.loader.PactUrl;
 import au.com.dius.pact.provider.junit5.PactVerificationContext;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.TestTemplate;
 import org.junit.jupiter.api.extension.ExtendWith;
 
 @Provider("NomeDoProvedor")
-@PactFolder("target/pacts")
+@PactUrl(urls = { "C:\\Users\\herbe\\eclipse-workspace\\pedido-lanche-service\\target\\pacts\\ClientePedido-default.json" })
+//@PactFolder("target/pacts")
 public class CozinhaProviderTest {
 
 	@BeforeEach
